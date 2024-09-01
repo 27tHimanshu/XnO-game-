@@ -1,13 +1,31 @@
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(82, 76, 76);
+}
+
+.board{
+    
+    border: 2px solid black;
+    width: 255px;
+    background-color: grey;
+    padding: 3px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
 
 .row{
     width:250px;
     height:84px;
-    
     display: flex;
     background-color: aqua;
     align-items: center;
     justify-content: space-around;
+    border-radius: 5px;
 }
 
 .square{
@@ -15,4 +33,12 @@
     padding:25px;
     border:2px solid black;
     cursor: pointer;
+}
+
+.turn{
+    
+    margin:2px;
+    border-radius: 5px;
+    background-color: bisque;
+    text-align: center;
 }

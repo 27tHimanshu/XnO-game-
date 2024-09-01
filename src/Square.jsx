@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './App'; // Assuming you have a CSS file for styling
 
-const Square = ({value}) => {
+const Square = ({ value, func }) => {
   return (
-    <div>
+    <button className="square" onClick={func}>
       {value}
-    </div>
-  )
-}
+    </button>
+  );
+};
 
-export default Square
+export default Square;

@@ -26,6 +26,10 @@ const App = () => {
     }
   }, [board]);
 
+  const reloadPage = () => {
+    window.location.reload();
+  };
+
   const getWinner = () => {
     for (let i = 0; i < winningPattern.length; i++) {
       const [a, b, c] = winningPattern[i];
@@ -77,7 +81,11 @@ const App = () => {
       </div>
       <div className="turn">
        {winner ? (
+        <>
         <h2> Winner is {winner} </h2>
+        <button className="new-game" onClick={reloadPage}>New Game</button>
+        </>
+        
        ) : (
         <h2>
         {turn}'s turn

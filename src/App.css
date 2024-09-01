@@ -42,3 +42,11 @@ html, body {
     background-color: bisque;
     text-align: center;
 }
+
+.new-game{
+  margin: 3px;
+  padding:5px;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}

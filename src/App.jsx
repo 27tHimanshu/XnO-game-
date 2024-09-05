@@ -27,7 +27,7 @@ const App = () => {
   }, [board]);
 
   const reloadPage = () => {
-    window.location.reload();
+      window.location.reload();
   };
 
   const getWinner = () => {
